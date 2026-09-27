@@ -1,0 +1,50 @@
+@media (max-width: 720px) {
+  html:has(.app-frame[data-view="stocks"]), body:has(.app-frame[data-view="stocks"]) { background: #0c0c0c; }
+  .app-frame[data-view="stocks"] { min-height: 100svh; background: #0c0c0c; color: #fbfbf7; font-family: "DM Sans",Inter,sans-serif; }
+  .app-frame[data-view="stocks"] .workspace { height: auto; min-height: 100svh; overflow: visible; }
+  .app-frame[data-view="stocks"] .topbar { display: none; }
+  .app-frame[data-view="stocks"] .content-scroll { height: auto; min-height: 100svh; overflow: visible; }
+  .app-frame[data-view="stocks"] .market-desktop { display: none; }
+  .app-frame[data-view="stocks"] .market-mobile { display: block; width: min(100%,430px); min-height: 100svh; margin: 0 auto; padding: env(safe-area-inset-top,0px) 20px 112px; background: #0c0c0c; color: #fbfbf7; }
+  .market-mobile button,.market-mobile input { font-family: "DM Sans",Inter,sans-serif; letter-spacing: -.3px; }
+  .market-mobile__header { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 16px 0 6px; }
+  .market-mobile__brand { display: inline-flex; align-items: center; gap: 8px; padding: 0; color: #fbfbf7; background: transparent; font: 600 11px "Geist Mono",monospace; letter-spacing: .07em; }
+  .market-mobile__brand .brand-mark { transform: scale(.84); transform-origin: left center; }
+  .market-mobile__badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 8px; border-radius: 99px; background: #ffffff1c; color: #b5b3aa; font: 500 9px "Geist Mono",monospace; white-space: nowrap; }
+  .market-mobile__badge i,.market-mobile__notice > span i { width: 6px; height: 6px; border-radius: 50%; background: #e0a85a; }
+  .market-mobile__summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 23px 0 24px; }
+  .market-mobile__summary > div { display: flex; flex-direction: column; gap: 5px; }
+  .market-mobile__summary strong { font: 500 36px/1 "Geist Mono",monospace; letter-spacing: -.06em; font-variant-numeric: tabular-nums; }
+  .market-mobile__summary > div > span { color: #b5b3aa; font-size: 12px; }
+  .market-mobile__summary > a { display: inline-flex; align-items: center; gap: 8px; padding: 12px 14px; border-radius: 14px; color: #0c0c0c; background: #fbfbf7; font-size: 12px; font-weight: 600; text-decoration: none; }
+  .market-mobile__tabs { display: flex; margin: 0 -20px; border-bottom: 1px solid #ffffff1a; }
+  .market-mobile__tabs button { position: relative; flex: 1; padding: 14px 0 13px; color: #88867f; background: transparent; font-size: 14px; font-weight: 600; }
+  .market-mobile__tabs button[aria-current="page"] { color: #fbfbf7; box-shadow: inset 0 -3px #4c8dff; }
+  .market-mobile__tabs button:disabled { cursor: not-allowed; opacity: .7; }
+  .market-mobile__filters { display: flex; gap: 8px; margin: 0 -20px; padding: 16px 20px 13px; overflow-x: auto; scrollbar-width: none; }
+  .market-mobile__filters::-webkit-scrollbar { display: none; }
+  .market-mobile__filters button { flex: 0 0 auto; padding: 9px 14px; border: 1px solid #ffffff1a; border-radius: 14px; color: #b5b3aa; background: transparent; font-size: 12px; font-weight: 500; }
+  .market-mobile__filters button.is-active { border-color: transparent; color: #fbfbf7; background: #ffffff1c; font-weight: 600; }
+  .market-mobile__search { display: flex; align-items: center; gap: 9px; height: 44px; margin: 4px 0 16px; padding: 0 12px; border: 1px solid #ffffff1a; border-radius: 13px; background: #171715; color: #88867f; }
+  .market-mobile__search input { min-width: 0; flex: 1; border: 0; outline: 0; padding: 0; color: #fbfbf7; background: transparent; font-size: 13px; }
+  .market-mobile__search input::placeholder { color: #88867f; }
+  .market-mobile__search > span { color: #6e6c66; font: 10px "Geist Mono",monospace; }
+  .market-mobile__notice { padding: 13px 14px; margin: 0 0 20px; border-radius: 14px; background: #171715; }
+  .market-mobile__notice > span { display: flex; align-items: center; gap: 7px; color: #b5b3aa; font: 500 9px "Geist Mono",monospace; letter-spacing: .04em; }
+  .market-mobile__notice > span i { background: #e0a85a; }
+  .market-mobile__notice p { margin: 7px 0 0; color: #88867f; font-size: 11px; line-height: 1.45; }
+  .market-mobile__retry { padding: 0 0 0 3px; color: #fbfbf7; background: transparent; font: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  .market-mobile__assets { scroll-margin-top: 12px; }
+  .market-mobile__list-head { display: flex; justify-content: space-between; align-items: baseline; padding: 0 0 11px; border-bottom: 1px solid #ffffff1a; }
+  .market-mobile__list-head strong { font-size: 14px; font-weight: 600; }
+  .market-mobile__list-head span { color: #6e6c66; font: 9px "Geist Mono",monospace; letter-spacing: .07em; }
+  .market-mobile__asset { display: flex; align-items: center; gap: 11px; min-height: 67px; border-bottom: 1px solid #ffffff13; color: inherit; text-decoration: none; }
+  .market-mobile__ticker { display: grid; flex: none; width: 36px; height: 36px; place-items: center; border-radius: 12px; background: #1f1f1d; color: #dfdfd9; font: 600 12px "Geist Mono",monospace; }
+  .market-mobile__ticker--s { background: #28211e; color: #e2a98c; }.market-mobile__ticker--t { background: #281e1d; color: #f28c85; }.market-mobile__ticker--c { background: #1d2529; color: #88bada; }.market-mobile__ticker--m { background: #20241d; color: #b2c68b; }.market-mobile__ticker--n { background: #1e2522; color: #8fc8a7; }.market-mobile__ticker--a { background: #23201e; color: #e4a578; }.market-mobile__ticker--e { background: #1d2327; color: #9abbd6; }.market-mobile__ticker--i { background: #202127; color: #aaa9d8; }
+  .market-mobile__asset-copy { min-width: 0; flex: 1; }.market-mobile__asset-copy strong { display: block; overflow: hidden; color: #fbfbf7; font-size: 13px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }.market-mobile__asset-copy small { display: flex; align-items: center; gap: 6px; margin-top: 4px; color: #88867f; font-size: 10px; }.market-mobile__asset-copy small b { color: #b5b3aa; font: 10px "Geist Mono",monospace; }.market-mobile__asset-copy small i { width: 3px; height: 3px; border-radius: 50%; background: #6e6c66; }
+  .market-mobile__asset-status { flex: none; min-width: 104px; text-align: right; }.market-mobile__asset-status strong,.market-mobile__asset-status small { display: block; }.market-mobile__asset-status strong { color: #88867f; font: 11px "Geist Mono",monospace; font-variant-numeric: tabular-nums; }.market-mobile__asset-status small { margin-top: 4px; color: #6e6c66; font-size: 9px; }.market-mobile__asset > svg { flex: none; color: #6e6c66; transform: rotate(-90deg); }
+  .market-mobile__empty { padding: 25px 5px; color: #88867f; font-size: 12px; line-height: 1.5; }
+  .market-mobile__nav { position: fixed; z-index: 30; right: 50%; bottom: calc(14px + env(safe-area-inset-bottom,0px)); display: flex; width: min(calc(100% - 32px),400px); gap: 2px; padding: 7px; transform: translateX(50%); border-radius: 999px; background: #171715; box-shadow: 0 10px 34px -10px #000b; }
+  .market-mobile__nav button { display: flex; flex: 1; flex-direction: column; align-items: center; gap: 3px; padding: 9px 4px; border-radius: 999px; color: #88867f; background: transparent; font: 9px "Geist Mono",monospace; }
+  .market-mobile__nav button.is-active { color: #0c0c0c; background: #fbfbf7; }
+}
