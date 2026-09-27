@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+dist/
+coverage/
+*.bin
+*.abi
+*.tsbuildinfo
+.env*
+!.env.example
+.vercel/
+.impeccable/bin/
+.impeccable/live/
+cache/
+out/
+broadcast/
+lib/forge-std/
